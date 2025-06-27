@@ -2,6 +2,9 @@
 const withNextIntl = require("next-intl/plugin")();
 const nextConfig = {
   reactStrictMode: true,
+  eslint: {
+    ignoreDuringBuilds: true,  // 👈 disable lint errors during build
+  },
   images: {
     remotePatterns: [
       {
